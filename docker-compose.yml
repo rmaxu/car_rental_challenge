@@ -1,0 +1,12 @@
+version: "3.8"
+
+services: 
+  postgres_db:
+    build: .
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./script:/code/script
+      - ./queries:/code/queries
+      - ./init_db.sh:/code/init_db.sh
