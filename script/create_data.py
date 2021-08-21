@@ -43,7 +43,7 @@ def create_data() :
         "Sentra":"Sedan",
         "March":"Subcompacto",
         "Kicks":"SUV",
-        "Beat":"Chevrolet",
+        "Beat":"Subcompacto",
         "Cavalier":"Sedan",
         "Tracker":"SUV",
         "Yaris":"Subcompacto",
