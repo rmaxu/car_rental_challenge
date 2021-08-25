@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:13.4-buster
 
 # Set enviroment varibles
 ENV POSTGRES_PASSWORD=postgres
@@ -20,3 +20,5 @@ COPY script script/
 RUN python3 -m pip install -r script/requirements.txt --default-timeout=1000
 COPY queries queries/
 COPY run_flow.sh run_flow.sh
+
+RUN chmod +rx run_flow.sh
